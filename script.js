@@ -15,3 +15,22 @@ window.addEventListener('DOMContentLoaded', () => {
   const preferredLang = localStorage.getItem('preferredLanguage') || 'en';
   setLanguage(preferredLang);
 });
+
+
+ // Show sticky footer after hero CTA scroll
+  document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.getElementById("stickyFooter");
+    const triggerEl = document.querySelector(".hero-buttons"); // Adjust selector to your CTA container
+
+    function checkScroll() {
+      const triggerPosition = triggerEl.getBoundingClientRect().top;
+      
+      if (triggerPosition < 0) {
+        footer.style.display = "block";
+      } else {
+        footer.style.display = "none";
+      }
+    }
+
+    window.addEventListener("scroll", checkScroll);
+  });

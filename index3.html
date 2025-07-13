@@ -6,173 +6,148 @@
     <title>Amazon Mentorship</title>
     <link rel="stylesheet" href="style3.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=IBM+Plex+Serif:ital@1&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
-    <section class="results-section">
-        <div class="container">
-            <h1 class="main-title">Why Does Our Mentorship Deliver Results?</h1>
-            <div class="features-grid">
-                <div class="feature-card" style="--i: 1;">
-                    <div class="feature-icon">
-                        <div class="icon-circle">
-                            <div class="person-with-stars">
-                                <div class="stars-top">
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                    <div class="star"></div>
-                                </div>
-                                <div class="person-icon">
-                                    <div class="person-head"></div>
-                                    <div class="person-body"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Dedicated Amazon Expert</h3>
-                    <p>Before the products arrive, we complete 90% of the pre-launch work to ensure a smooth and successful product launch after delivery.</p>
-                </div>
-                <div class="feature-card" style="--i: 2;">
-                    <div class="feature-icon">
-                        <div class="icon-circle">
-                            <div class="hand-package">
-                                <div class="package-box">
-                                    <div class="package-top"></div>
-                                    <div class="package-body"></div>
-                                </div>
-                                <div class="hand-support">
-                                    <div class="hand-palm"></div>
-                                    <div class="hand-thumb"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Product Research & Import Help</h3>
-                    <p>The mentorship includes personal research to find a highly profitable product and assistance by AI with the import process.</p>
-                </div>
-                <div class="feature-card" style="--i: 3;">
-                    <div class="feature-icon">
-                        <div class="icon-circle">
-                            <div class="payment-hand">
-                                <div class="hand-giving">
-                                    <div class="hand-palm-pay"></div>
-                                    <div class="hand-fingers-pay"></div>
-                                </div>
-                                <div class="coin-money">
-                                    <div class="coin-outer">
-                                        <span class="coin-symbol">₹</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Flexible Payment</h3>
-                    <p>You only need to pay 30% of the cost upfront, with the remaining 70% due when the goods arrive at customs after 45 days.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+     <!-- Language Toggle -->
+     <div class="language-toggle">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('mr')">मराठी</button>
+      </div>
+  
 
-    <!-- guide section -->
+
+      <!-- results-section-->
+          <section class="results-section">
+              <div class="background-animation">
+                  <div class="floating-shape shape-1"></div>
+                  <div class="floating-shape shape-2"></div>
+                  <div class="floating-shape shape-3"></div>
+                  <div class="floating-shape shape-4"></div>
+                  <div class="floating-shape shape-5"></div>
+              </div>
+              
+              <div class="container">
+                  <h1 class="main-title lang lang-en fade">Why Does Our Financial Guidance Deliver Results?</h1>
+                  <h1 class="main-title lang lang-mr fade">आमच्या वित्तीय मार्गदर्शनामुळे यश का मिळते?</h1>
+      
+                  <div class="features-grid">
+                      <!-- Card 1: Expert-Led Financial Mentorship -->
+                      <div class="feature-card" style="--i: 1;">
+                          <div class="feature-icon">
+                              <div class="icon-circle">
+                                  <i class="fas fa-user-tie"></i>
+                              </div>
+                          </div>
+                          <h3 class="lang lang-en fade">Expert-Led Financial Mentorship</h3>
+                          <h3 class="lang lang-mr fade">तज्ज्ञ मार्गदर्शनासह वित्तीय मेंटॉरशिप</h3>
+                          <p class="lang lang-en fade">With 21+ years of expertise, CS Vrushal Saudagar offers practical, personalized guidance on finance, tax planning, investments, and compliance — so you achieve true financial clarity and confidence without confusion or stress.</p>
+                          <p class="lang lang-mr fade" style="display: none;">२१+ वर्षांचा अनुभव असलेले, सीएस वृषाल सौदागर आर्थिक नियोजन, कर व्यवस्थापन, गुंतवणूक आणि कायदेशीर पालन यावर वैयक्तिक आणि प्रात्यक्षिक मार्गदर्शन देतात — ज्यामुळे आपण आत्मविश्वासाने व स्पष्टपणे आर्थिक निर्णय घेऊ शकता.</p>
+                          <div class="card-glow"></div>
+                      </div>
+      
+                      <!-- Card 2: Simplified Laws & Smart Wealth Planning -->
+                      <div class="feature-card" style="--i: 2;">
+                          <div class="feature-icon">
+                              <div class="icon-circle">
+                                  <i class="fas fa-chart-line"></i>
+                              </div>
+                          </div>
+                          <h3 class="lang lang-en fade">Simplified Laws & Smart Wealth Planning</h3>
+                          <h3 class="lang lang-mr fade">सुलभ कायदे आणि स्मार्ट संपत्ती नियोजन</h3>
+                          <p class="lang lang-en fade">We simplify complex financial laws, tax regulations, and investment options into easy, step-by-step strategies. This empowers you to understand, manage, and grow your wealth confidently, no matter your current financial knowledge.</p>
+                          <p class="lang lang-mr fade" style="display: none;">आम्ही गुंतागुंतीच्या आर्थिक कायद्यांना, कर नियमनांना व गुंतवणूक पर्यायांना सोप्या, टप्प्याटप्प्याने वापरता येणाऱ्या पद्धतीत रूपांतर करतो — जेणेकरून कोणत्याही पार्श्वभूमीचा व्यक्ती आत्मविश्वासाने आपले धन व्यवस्थापित व वाढवू शकेल.</p>
+                          <div class="card-glow"></div>
+                      </div>
+      
+                      <!-- Card 3: Affordable & Flexible Learning Plans -->
+                      <div class="feature-card" style="--i: 3;">
+                          <div class="feature-icon">
+                              <div class="icon-circle">
+                                  <i class="fas fa-graduation-cap"></i>
+                              </div>
+                          </div>
+                          <h3 class="lang lang-en fade">Affordable & Flexible Learning Plans</h3>
+                          <h3 class="lang lang-mr fade">किफायतशीर व लवचिक शिक्षण योजना</h3>
+                          <p class="lang lang-en fade">Our financial literacy programs are affordable, flexible, and tailored for everyone — students, working professionals, and retirees. You can learn at your own pace, in your own style, and finally take control of your financial future.</p>
+                          <p class="lang lang-mr fade" style="display: none;">आमचे वित्तीय शिक्षण कार्यक्रम किफायतशीर, लवचिक व सर्वांसाठी योग्य आहेत — विद्यार्थी, व्यावसायिक व निवृत्त व्यक्तींसाठी. आपण आपल्या गतीने व आपल्या पद्धतीने शिकू शकता आणि स्वतःच्या आर्थिक भविष्यावर नियंत्रण ठेवू शकता.</p>
+                          <div class="card-glow"></div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      
+      <!-- guide-section-->
     <section class="guide-section">
         <div class="container">
-            <h1 class="main-title">Why You Need Financial Literacy</h1>
+            <h1 class="main-title lang lang-en fade">Why You Need Financial Literacy?</h1>
+            <h1 class="main-title lang lang-mr fade">आपल्याला आर्थिक साक्षरतेची का गरज आहे?</h1>
+            
             <div class="steps-grid">
                 <div class="step-card" style="--i: 1;">
                     <span class="step-number">1</span>
                     <div class="step-content">
-                        <h3>Understand How Money Works</h3>
+                        <h3 class="lang lang-en fade">Understand How Money Works</h3>
+                    <h3 class="lang lang-mr fade">पैसे कसे कार्य करतात हे समजून घ्या</h3>
                         <div class="step-description">
-                            <p>Financial literacy teaches you how income, spending, saving, and investing affect your financial well-being.</p>
+                            <p class="lang lang-en fade">Financial literacy teaches you how income, spending, saving, and investing affect your financial well-being.</p>
+                            <p class="lang lang-mr fade">आर्थिक साक्षरता आपल्याला उत्पन्न, खर्च, बचत आणि गुंतवणूक यांचा आर्थिक आरोग्यावर कसा परिणाम होतो हे शिकवते.</p>
                         </div>
                     </div>
                 </div>
                 <div class="step-card" style="--i: 2;">
                     <span class="step-number">2</span>
                     <div class="step-content">
-                        <h3>Avoid Debt Traps</h3>
+                        <h3 class="lang lang-en fade">Avoid Debt Traps</h3>
+                    <h3 class="lang lang-mr fade">कर्जाच्या सापळ्यात अडकू नका</h3>
                         <div class="step-description">
-                            <p>It helps you make smarter decisions about loans and credit, avoiding high-interest debt cycles.</p>
+                            <p class="lang lang-en fade">It helps you make smarter decisions about loans and credit, avoiding high-interest debt cycles.</p>
+                            <p class="lang lang-mr fade">कर्ज आणि क्रेडिटबाबत अधिक चांगले निर्णय घेण्यास मदत होते, उच्च व्याजाच्या कर्जाच्या साखळीत अडकण्यापासून वाचवते.</p>
                         </div>
                     </div>
                 </div>
                 <div class="step-card" style="--i: 3;">
                     <span class="step-number">3</span>
                     <div class="step-content">
-                        <h3>Plan for Future <br>Goals</h3>
+                        <h3 class="lang lang-en fade">Plan for Future Goals</h3>
+                    <h3 class="lang lang-mr fade">भविष्यातील उद्दिष्टांसाठी नियोजन करा</h3>
                         <div class="step-description">
-                            <p>Whether it's buying a house or retiring early, financial literacy helps you set and reach long-term goals.</p>
+                            <p class="lang lang-en fade">Financial education helps you set and achieve long-term goals like buying a home or a comfortable retirement.</p>
+                            <p class="lang lang-mr fade">घर खरेदी असो किंवा लवकर निवृत्ती, आर्थिक साक्षरता दीर्घकालीन उद्दिष्टे निश्चित आणि पूर्ण करण्यात मदत करते.</p>
                         </div>
                     </div>
                 </div>
                 <div class="step-card" style="--i: 4;">
                     <span class="step-number">4</span>
                     <div class="step-content">
-                        <h3>Build Wealth Over Time</h3>
+                        <h3 class="lang lang-en fade">Build Wealth Gradually</h3>
+                    <h3 class="lang lang-mr fade">वेळोवेळी संपत्ती निर्माण करा</h3>
                         <div class="step-description">
-                            <p>It enables you to start small and grow your assets steadily through saving and investing.</p>
+                            <p class="lang lang-en fade">Saving and investing help you grow your wealth slowly and steadily over time.</p>
+                            <p class="lang lang-mr fade">बचत आणि गुंतवणुकीद्वारे आपली मालमत्ता हळूहळू वाढवण्यास मदत करते.</p>
                         </div>
                     </div>
                 </div>
                 <div class="step-card" style="--i: 5;">
                     <span class="step-number">5</span>
                     <div class="step-content">
-                        <h3>Handle Emer-gencies Confidently</h3>
+                        <h3 class="lang lang-en fade">Handle Emergencies Confidently</h3>
+                    <h3 class="lang lang-mr fade">आपत्कालीन परिस्थिती आत्मविश्वासाने हाताळा</h3>
                         <div class="step-description">
-                            <p>Learn how to build an emergency fund and manage unexpected expenses with ease.</p>
+                            <p class="lang lang-en fade">Learn how to build an emergency fund and manage unexpected expenses with ease.</p>
+                            <p class="lang lang-mr fade">आपत्कालीन निधी तयार कसा करावा आणि अनपेक्षित खर्च कसा हाताळावा हे शिकता येते.</p>
                         </div>
                     </div>
                 </div>
                 <div class="step-card" style="--i: 6;">
                     <span class="step-number">6</span>
                     <div class="step-content">
-                        <h3>Make Informed Decisions</h3>
+                        <h3 class="lang lang-en fade">Make Informed Decisions</h3>
+                    <h3 class="lang lang-mr fade">माहितीवर आधारित निर्णय घ्या</h3>
                         <div class="step-description">
-                            <p>Financial education gives you the power to choose the best financial products and strategies.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- personas-section -->
-    <section class="personas-section">
-        <div class="container">
-            <h1 class="main-title">Who Is This For?</h1>
-            <div class="personas-grid">
-                <div class="persona-card">
-                    <div class="persona-overlay">
-                        <img src="images/person1.jpg" alt="Working Professional" class="persona-image">
-                        <div class="persona-text">
-                            <h3>Working Professional</h3>
-                            <p>Looking for passive income from a side hustle</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="persona-card">
-                    <div class="persona-overlay">
-                        <img src="images/person2.jpg" alt="Entrepreneur" class="persona-image">
-                        <div class="persona-text">
-                            <h3>Entrepreneur</h3>
-                            <p>Ready to scale their business with Amazon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="persona-card">
-                    <div class="persona-overlay">
-                        <img src="images/person3.jpg" alt="Student" class="persona-image">
-                        <div class="persona-text">
-                            <h3>Student</h3>
-                            <p>Seeking financial independence</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="persona-card">
-                    <div class="persona-overlay">
-                        <img src="images/person4.jpg" alt="Investor" class="persona-image">
-                        <div class="persona-text">
-                            <h3>Investor</h3>
-                            <p>Looking for high ROI opportunities</p>
+                            <p class="lang lang-en fade">Financial education gives you the power to choose the best financial products and strategies.</p>
+                            <p class="lang lang-mr fade">आर्थिक शिक्षण तुम्हाला योग्य आर्थिक उत्पादने आणि धोरणे निवडण्याची क्षमता देते.</p>
                         </div>
                     </div>
                 </div>
@@ -180,5 +155,106 @@
         </div>
     </section>
 
+
+
+
+    <!-- personas-section-->
+    <section class="personas-section">
+        <div class="container">
+            <h2 class=" lang lang-en fade">Financial Literacy & Mentorship Program — Who is it for?</h2>
+            <h2 class=" lang lang-mr fade">आर्थिक साक्षरता आणि मेंटॉरशिप प्रोग्राम — कोणासाठी?</h2>
+            
+            <div class="personas-grid">
+                <div class="persona-card">
+                    <div class="persona-overlay">
+                        <img src="doctor1.jpg" alt="Doctor" class="persona-image">
+                        <div class="persona-text">
+                            <h3 class="lang lang-en fade">Doctors</h3>
+                            <h3 class="lang lang-mr fade">डॉक्टर्स</h3>
+                            <p class="lang lang-en fade">To help them manage high incomes smartly, reduce taxes, and build wealth for a secure future.</p>
+                            <p class="lang lang-mr fade" >उच्च उत्पन्न शहाणपणाने व्यवस्थापित करण्यासाठी, कर कमी करण्यासाठी, आणि सुरक्षित भविष्यासाठी संपत्ती निर्माण करण्यासाठी मदत.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="persona-card">
+                    <div class="persona-overlay">
+                        <img src="studet.jpg" alt="Student" class="persona-image">
+                        <div class="persona-text">
+                            <h3 class="lang lang-en fade">Students</h3>
+                            <h3 class="lang lang-mr fade" >विद्यार्थी</h3>
+                            <p class="lang lang-en fade">To teach them money skills, budgeting, saving habits, and early investing for a strong foundation.</p>
+                            <p class="lang lang-mr fade" >आर्थिक कौशल्ये, बजेटिंग, बचत सवयी, आणि मजबूत पाया तयार करण्यासाठी लवकर गुंतवणूक शिकवण्यासाठी.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="persona-card">
+                    <div class="persona-overlay">
+                        <img src="builder.jpg" alt="Builder/Contractor" class="persona-image">
+                        <div class="persona-text">
+                            <h3 class="lang lang-en fade">Builders</h3>
+                            <h3 class="lang lang-mr fade" style="display: none;">बिल्डर्स</h3>
+                            <p class="lang lang-en fade">To help them understand cash flow clearly, manage project finances smartly, and plan for a stable and secure future.</p>
+                            <p class="lang lang-mr fade" style="display: none;">रोख प्रवाह स्पष्टपणे समजून घेण्यासाठी, प्रोजेक्टचे अर्थकारण शहाणपणाने हाताळण्यासाठी, आणि स्थिर व सुरक्षित भविष्याची योजना करण्यासाठी मदत.</p>
+                        </div>
+                    </div>
+                </div>
+                   
+                <div class="persona-card">
+                    <div class="persona-overlay">
+                        <img src="housewife.jpg" alt="Homemaker/Housewife" class="persona-image">
+                        <div class="persona-text">
+                            <h3 class="lang lang-en fade">Housewife</h3>
+                            <h3 class="lang lang-mr fade" style="display: none;">गृहिणी</h3>
+                            <p class="lang lang-en fade">To help them confidently manage family finances, plan savings, and explore investments independently.</p>
+                            <p class="lang lang-mr fade" style="display: none;">घरगुती अर्थकारण आत्मविश्वासाने हाताळण्यासाठी, बचत नियोजन करण्यासाठी, आणि स्वतंत्र गुंतवणूक शोधण्यासाठी मदत.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.persona-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // 3D tilt effect on mouse move
+        document.querySelectorAll('.persona-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 10;
+                const rotateY = (centerX - x) / 10;
+                
+                card.style.transform = `translateY(-15px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) rotateX(0deg) rotateY(0deg)';
+            });
+        });
+    </script>
+    <script src="script3.js"></script>
 </body>
 </html>
