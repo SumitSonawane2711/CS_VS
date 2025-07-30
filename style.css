@@ -739,6 +739,9 @@ input[type="radio"] {
   .footer-cta-content h3{
     display:none;
   }
+  .footer-cta-text{
+    display:none;
+  }
 }
 
 
