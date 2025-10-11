@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #005ea5;
+}
+
+.intro p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.intro-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+.intro-video {
+  aspect-ratio: 12 / 7; /* custom aspect ratio */
+  width: 100%;
+  max-width: 840px;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+  border: 2px solid #0077cc;
+  position: relative;
+}
+.quiz {
+  margin-top: 2rem;
+}
+
+.question {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.question p {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #0099cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0077aa;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .intro-video {
+    width: 100%;
+  }
+
+  .popup-content {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

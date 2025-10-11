@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctors' Financial Literacy Quiz</title>
+  <link rel="stylesheet" href="/css/doctors.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Intro Section -->
+    <section class="intro">
+      <h1>Financial Literacy for Doctors</h1>
+      <p>Watch this quick introduction from our Company Secretary before taking the quiz.</p>
+      <video controls poster="thumbnail.jpg" class="intro-video">
+        <source src="/assets/videos/CS_VS.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz">
+      <h2>Answer the following 10 MCQs</h2>
+      <form id="quizForm">
+        <div id="questionsContainer"></div>
+        <button type="submit" class="btn">Submit Answers</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>🎉 Congratulations!</h2>
+      <p>Your score: <span id="scoreDisplay"></span> / 100</p>
+      <p>To understand your result and get a consultation, please fill this form:</p>
+
+      <form id="leadForm" target="hidden_iframe">
+        <!-- Replace entry.xxx with your own Google Form entry IDs -->
+        <input name="entry.1878981937" id="nameField" placeholder="Full Name" required>
+        <input name="entry.1623646481" id="emailField" type="email" placeholder="Email" required>
+        <input name="entry.712227106" id="phoneField" type="tel" placeholder="Phone" required>
+
+        <input type="hidden" name="entry.1606624378" id="scoreField">
+        <input type="hidden" name="entry.742944827" id="answersField">
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <p id="thankYou" class="hidden">✅ Thank you! Visit our main website for more info: 
+        <a href="https://vrushalsaudagar.com" target="_blank">yourmainwebsite.com</a>
+      </p>
+    </div>
+  </div>
+
+  
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+  <!-- JS File -->
+  <script src="/js/doctors.js"></script>
+</body>
+</html>

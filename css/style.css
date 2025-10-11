@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background: #f8f9ff;
   color: #1a1a1a;
 }
+
  h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -458,7 +458,7 @@ p {
 .mentor-bg {
   flex: 1;
   min-height: 400px;
-  background-image: url('/vrushal-s.jpeg'); /* Replace with your image */
+  background-image: url('/assets/vrushal-s.jpeg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   border-radius: 10px 0px 0px 10px;
