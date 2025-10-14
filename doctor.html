@@ -5,31 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doctors' Financial Literacy Quiz</title>
   <link rel="stylesheet" href="/css/doctors.css" />
+  <link rel="stylesheet" href="/css/style3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="container">
-    <!-- Intro Section -->
+
+    <!-- ===== Hero / Intro Section ===== -->
     <section class="intro">
-      <h1>Financial Literacy for Doctors</h1>
-      <p>Watch this quick introduction from our Company Secretary before taking the quiz.</p>
-      <video controls poster="thumbnail.jpg" class="intro-video">
-        <source src="/assets/videos/CS_VS.MP4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div class="background-animation">
+                  <div class="floating-shape shape-1"></div>
+                  <div class="floating-shape shape-2"></div>
+                  <div class="floating-shape shape-3"></div>
+                  <div class="floating-shape shape-4"></div>
+                  <div class="floating-shape shape-5"></div>
+              </div>
+      <div class="intro-content">
+        <div class="text">
+          <h1>Financial Literacy for Doctors</h1>
+          <p>Empowering healthcare professionals with financial awareness, investment insights, and money management strategies for a secure and prosperous future.</p>
+          <div class="hero-buttons">
+          <a
+           href="#quiz" 
+            data-cal-link="vsaudagar/30min"
+            data-cal-namespace="30min"
+            data-cal-config='{"layout":"month_view"}'
+            class="consultation-btn1 "
+          >
+            Give Quiz
+          </a>
+         
+        </div>
+        </div>
+        
+        <div class="video-container">
+          <p class="video-intro">Watch this quick introduction from our Company Secretary</p>
+          <div class="hero-video">
+          <video controls autoplay loop muted poster="/assets/thumbnail1.png" class="intro-video">
+            <source src="/assets/videos/CS_VS.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Quiz Section -->
-    <section class="quiz">
+    <!-- ===== About Section ===== -->
+    <section class="about">
+      <h2>Why Doctors Need Financial Literacy?</h2>
+      <p>Doctors dedicate their lives to patient care — but managing finances is equally vital. Financial literacy ensures you make informed decisions about investments, insurance, taxes, and retirement planning.</p>
+      <div class="about-grid">
+        <div class="about-card">
+          <img src="/icons/investment.png" alt="Investment Planning">
+          <h3>Investment Planning</h3>
+          <p>Understand safe and smart ways to invest your earnings for long-term growth.</p>
+        </div>
+        <div class="about-card">
+          <img src="/icons/tax.png" alt="Tax Management">
+          <h3>Tax Management</h3>
+          <p>Learn to optimize your income through tax-saving strategies and legal compliance.</p>
+        </div>
+        <div class="about-card">
+          <img src="/icons/retiredment.png" alt="Retirement Planning">
+          <h3>Retirement Planning</h3>
+          <p>Plan early for financial independence and peace of mind after your medical career.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Benefits Section ===== -->
+    <section class="benefits">
+      <h2>What You’ll Gain</h2>
+      <ul class="benefits-list">
+        <li>💡 Practical insights into wealth creation and management</li>
+        <li>📈 Confidence in investment and portfolio decisions</li>
+        <li>💰 Smarter budgeting for clinics and personal finances</li>
+        <li>🏦 Awareness of financial risks and mitigation strategies</li>
+        <li>📚 Exclusive access to finance-related learning resources</li>
+      </ul>
+    </section>
+
+    <!-- ===== Quiz Section ===== -->
+    <section class="quiz" id="quiz">
       <h2>Answer the following 10 MCQs</h2>
       <form id="quizForm">
         <div id="questionsContainer"></div>
-        <button type="submit" class="btn">Submit Answers</button>
+        <button type="submit" style="margin-top:20px;" class="consultation-btn1">Submit Answers</button>
       </form>
+    </section>
+
+    <!-- ===== Learning Resources Section ===== -->
+    <section class="resources">
+      <h2>Continue Learning</h2>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <h3>Doctor’s Guide to Investment</h3>
+          <p>Explore essential investment options and build your portfolio with confidence.</p>
+          <a href="#" class="learn-more">Read More →</a>
+        </div>
+        <div class="resource-card">
+          <h3>Clinic Financial Management</h3>
+          <p>Learn how to manage your clinic’s operational and financial expenses efficiently.</p>
+          <a href="#" class="learn-more">Read More →</a>
+        </div>
+        <div class="resource-card">
+          <h3>Tax & Legal Simplified</h3>
+          <p>Understand the taxation framework and legal considerations for medical professionals.</p>
+          <a href="#" class="learn-more">Read More →</a>
+        </div>
+      </div>
     </section>
   </div>
 
-  <!-- Popup -->
+  <!-- ===== Popup (Existing) ===== -->
   <div id="popup" class="popup">
     <div class="popup-content">
       <h2>🎉 Congratulations!</h2>
@@ -37,7 +128,6 @@
       <p>To understand your result and get a consultation, please fill this form:</p>
 
       <form id="leadForm" target="hidden_iframe">
-        <!-- Replace entry.xxx with your own Google Form entry IDs -->
         <input name="entry.1878981937" id="nameField" placeholder="Full Name" required>
         <input name="entry.1623646481" id="emailField" type="email" placeholder="Email" required>
         <input name="entry.712227106" id="phoneField" type="tel" placeholder="Phone" required>
@@ -54,10 +144,14 @@
     </div>
   </div>
 
-  
   <iframe name="hidden_iframe" style="display:none;"></iframe>
 
-  <!-- JS File -->
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>© 2025 Vrushal Saudagar & Associates | Financial Literacy Initiative for Doctors</p>
+    <p>Visit us at <a href="https://vrushalsaudagar.com" target="_blank">vrushalsaudagar.com</a></p>
+  </footer>
+
   <script src="/js/doctors.js"></script>
 </body>
 </html>
