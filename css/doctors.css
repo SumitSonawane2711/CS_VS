@@ -5,14 +5,15 @@
   box-sizing: border-box;
 }
 html {
-    scroll-padding-top: 80px; /* adjust to your navbar height */
+  scroll-padding-top: 80px; /* adjust to your navbar height */
 
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f9fafb;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #e9e9e9ff;
   color: #1e293b;
   line-height: 1.6;
 }
@@ -27,7 +28,14 @@ body {
 
 /* ===== HERO / INTRO SECTION ===== */
 .intro {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #264877ff 100%);
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e293b 25%,
+    #334155 50%,
+    #475569 75%,
+    #264877ff 100%
+  );
   padding: 60px 30px;
   border-radius: 16px;
   text-align: center;
@@ -35,44 +43,53 @@ body {
   margin-top: 20px;
   transition: all 0.3s ease;
   position: relative;
-  
 }
 
 .intro::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: 
-        radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(95, 92, 246, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 40% 60%, rgba(16, 47, 185, 0.2) 0%, transparent 50%);
-    pointer-events: none;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(59, 130, 246, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(95, 92, 246, 0.3) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 60%,
+      rgba(16, 47, 185, 0.2) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: 1;
 }
 
 .intro::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-        repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 98px,
-            rgba(255, 255, 255, 0.03) 100px
-        ),
-        repeating-linear-gradient(
-            180deg,
-            transparent,
-            transparent 98px,
-            rgba(255, 255, 255, 0.03) 100px
-        );
-    pointer-events: none;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 98px,
+      rgba(255, 255, 255, 0.03) 100px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 98px,
+      rgba(255, 255, 255, 0.03) 100px
+    );
+  pointer-events: none;
+  z-index: 1;
 }
 
 .intro-content {
@@ -108,14 +125,12 @@ body {
   background: #f1f5f938;
   padding: 10px;
   border: 1px solid #d0e6f8ff;
-  z-index:50;
+  z-index: 50;
 }
-
-
 
 /* Intro video label above video */
 .video-container p {
-  font-size: 1.0rem;
+  font-size: 1rem;
   color: #ebececff;
   margin-bottom: 10px;
   max-width: 600px;
@@ -141,8 +156,6 @@ body {
   border-radius: 8px;
 }
 
-
-
 /* Mobile adjustments */
 @media (max-width: 600px) {
   .video-container {
@@ -159,7 +172,7 @@ body {
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
-  font-weight:bold;
+  font-weight: bold;
   justify-content: center;
   gap: 0.75rem;
   margin-top: 2rem;
@@ -169,7 +182,7 @@ body {
   z-index: 50;
   position: relative;
   overflow: hidden;
-    font-weight:bold;
+  font-weight: bold;
   padding: 0.7rem 1.2rem;
   cursor: pointer;
   font-size: 1rem;
@@ -187,7 +200,7 @@ body {
   cursor: pointer;
   font-size: 1rem;
   border: none;
-  background-color: #FEC401;
+  background-color: #fec401;
   color: white;
   border-radius: 6px;
   text-decoration: none;
@@ -201,7 +214,7 @@ body {
 }
 /* Light slide animation */
 .consultation-btn1::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -75%;
@@ -217,7 +230,7 @@ body {
   animation: shine 2s infinite;
 }
 .consultation-btn2::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -75%;
@@ -232,7 +245,6 @@ body {
   transform: skewX(-20deg);
   animation: shine 2s infinite;
 }
-
 
 /* ===== ABOUT SECTION ===== */
 .about {
