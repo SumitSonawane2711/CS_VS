@@ -1,15 +1,19 @@
 // --- QUIZ QUESTIONS ---
 const questions = [
-  { q: "1. What is the primary purpose of financial planning?", options: ["To reduce taxes", "To manage income and expenses", "To invest in gold", "To spend more"], correct: 1 },
-  { q: "2. Which investment option is generally safest?", options: ["Stocks", "Mutual Funds", "Fixed Deposits", "Cryptocurrency"], correct: 2 },
-  { q: "3. What does insurance primarily provide?", options: ["Profit", "Protection", "Growth", "Tax evasion"], correct: 1 },
-  { q: "4. What is the full form of SIP?", options: ["Systematic Investment Plan", "Savings Interest Policy", "Secure Investment Plan", "Simple Insurance Plan"], correct: 0 },
-  { q: "5. Which one is a liability?", options: ["Home loan", "Car", "Mutual Fund", "Salary"], correct: 0 },
-  { q: "6. Diversification means:", options: ["Investing in one stock", "Investing across multiple assets", "Avoiding investment", "Putting money in savings account"], correct: 1 },
-  { q: "7. Emergency fund should cover:", options: ["1 month", "3-6 months", "1 year", "No need"], correct: 1 },
-  { q: "8. What does a credit score represent?", options: ["Your income", "Your spending", "Your creditworthiness", "Your assets"], correct: 2 },
-  { q: "9. Which tax-saving option is under Section 80C?", options: ["FD", "PPF", "NPS", "Crypto"], correct: 1 },
-  { q: "10. Retirement planning should start:", options: ["After 50", "At 40", "Early in career", "Never"], correct: 2 },
+  { q: "1. Do you monitor your Income and Expenses?", options: ["yes","no"], correct: 0 },
+  { q: "2. Do you take care of your Liquidity with informed Decisions?", options: ["yes","no"], correct: 0 },
+  { q: "3. Whether your CA effectively helps in Tax Planning?", options: ["yes","no"], correct: 0 },
+  { q: "4. Do you feel you, over rely upon CA?",options: ["yes","no"], correct: 1 },
+  { q: "5. Are you knowing Tax Recovery Process?",options: ["yes","no"], correct: 0 },
+  { q: "6. Do you have Fear of Scrutiny or Raids?", options: ["yes","no"], correct: 1 },  
+  { q: "7. Do you Track your Returns?", options: ["yes","no"], correct: 0 },
+  { q: "8. Do you have incurred Losses in Investments", options: ["yes","no"], correct: 0 },
+  { q: "9. Do you rely on Brokers and Agents for your Investment Decisions?",options: ["yes", "no"],correct:0},
+  { q: "10. Have you ever done your Risk Profiling?",options: ["yes","no"], correct : 1},
+  { q: "11. Do you require any financial Discipline at this point of Life?",options: ["yes","no"], correct : 0},
+  { q: "12. Are you Doing your Wealth Audit?",options: ["yes","no"], correct : 1},
+  { q: "13. Are you requiring any help in Assets Building?",options: ["yes","no"], correct : 0},
+  { q: "14. If we suggest you some systems at Mouse Click, would you Like it?",options: ["yes","no"], correct : 0},
 ];
 
 // --- RENDER QUESTIONS ---
@@ -25,6 +29,13 @@ questions.forEach((q, i) => {
     ).join("")}
   `;
   container.appendChild(div);
+});
+
+document.addEventListener("click", (e) => {
+  // Check if clicked element is the close button
+  if (e.target.classList.contains("close-popup")) {
+    document.getElementById("popup").style.display = "none";
+  }
 });
 
 // --- HANDLE QUIZ SUBMIT ---
@@ -43,7 +54,7 @@ document.getElementById("quizForm").addEventListener("submit", (e) => {
     }
   });
 
-  const finalScore = score * 10;
+  const finalScore = (score/14) * 100;
   document.getElementById("scoreDisplay").textContent = finalScore;
   document.getElementById("scoreField").value = finalScore;
   document.getElementById("answersField").value = answers.join(", ");
