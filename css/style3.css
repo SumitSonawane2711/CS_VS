@@ -186,12 +186,12 @@ p {
 /* Enhanced Personas Section */
 /* Enhanced Personas Section */
 /* Enhanced Personas Section */
-.personas-section {
+/* .personas-section {
     background: transparent;
     padding: 60px 0;
     position: relative;
     overflow: hidden;
-}
+} */
 
 .personas-section::before {
     content: '';
@@ -233,7 +233,7 @@ p {
     backdrop-filter: blur(20px);
 }
 
-.persona-card::before {
+/* .persona-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -248,15 +248,15 @@ p {
     opacity: 0;
     transition: opacity 0.6s ease;
     z-index: 1;
-}
+} */
 
-.persona-card:hover {
+/* .persona-card:hover {
     transform: translateY(-15px);
     box-shadow: 
         0 30px 60px rgba(0, 0, 0, 0.2),
         0 1px 0px rgba(255, 255, 255, 0.3) inset;
     border-color: rgba(255, 255, 255, 0.4);
-}
+} */
 
 .persona-card:hover::before {
     opacity: 1;

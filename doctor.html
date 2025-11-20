@@ -123,10 +123,8 @@
   <!-- ===== Popup (Existing) ===== -->
   <div id="popup" class="popup">
     <div class="popup-content">
-      <button class="close-popup" id="close-popup">&times;</button>
-      <h2>🎉 Congratulations!</h2>
-      <p>Your score: <span id="scoreDisplay"></span> / 100</p>
-      <p>To understand your result and get a consultation, please fill this form:</p>
+      
+      <p>To get your result, fill this form:</p>
 
       <form id="leadForm" target="hidden_iframe">
         <input name="entry.1878981937" id="nameField" placeholder="Full Name" required>
@@ -139,11 +137,24 @@
         <button type="submit" class="btn">Submit</button>
       </form>
 
-      <p id="thankYou" class="hidden">✅ Thank you! Visit our main website for more info: 
-        <a href="https://vrushalsaudagar.com" target="_blank">yourmainwebsite.com</a>
+     
+    </div>
+  </div>
+
+   <div id="popup2" class="popup2">
+    <div class="popup-content">
+      <button class="close-popup" id="close-popup">&times;</button>
+      <h2>🎉 Congratulations!</h2>
+      <p>Your score: <span id="scoreDisplay"></span> / 100</p>
+       
+      <p id="thankYou" >✅ Thank you! Our team will contact you shortly.</p> 
+        
+        <a href="https://vrushalsaudagar.com" target="_blank">Visit Our Main Website</a>
       </p>
     </div>
   </div>
+
+  
 
   <iframe name="hidden_iframe" style="display:none;"></iframe>
 

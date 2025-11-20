@@ -34,7 +34,7 @@ questions.forEach((q, i) => {
 document.addEventListener("click", (e) => {
   // Check if clicked element is the close button
   if (e.target.classList.contains("close-popup")) {
-    document.getElementById("popup").style.display = "none";
+    document.getElementById("popup2").style.display = "none";
   }
 });
 
@@ -54,7 +54,7 @@ document.getElementById("quizForm").addEventListener("submit", (e) => {
     }
   });
 
-  const finalScore = (score/14) * 100;
+  const finalScore = Math.round((score / 14) * 100);
   document.getElementById("scoreDisplay").textContent = finalScore;
   document.getElementById("scoreField").value = finalScore;
   document.getElementById("answersField").value = answers.join(", ");
@@ -73,8 +73,8 @@ document.getElementById("leadForm").addEventListener("submit", function(e) {
     body: new FormData(this),
     mode: "no-cors"
   }).then(() => {
-    document.getElementById("leadForm").classList.add("hidden");
-    document.getElementById("thankYou").classList.remove("hidden");
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("popup2").style.display = "flex";
   }).catch(() => {
     alert("There was an error submitting the form. Please try again.");
   });
